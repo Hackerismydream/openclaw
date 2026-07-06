@@ -327,7 +327,7 @@ describeControlUiE2e("Control UI mocked Gateway E2E", () => {
         {
           id: "user-inbound-media-ref",
           role: "user",
-          content: "",
+          content: [{ type: "text", text: "🖼️ Attached image" }],
           MediaPath: "media://inbound/telegram-photo.png",
           MediaType: "image/png",
           timestamp: Date.now(),
@@ -337,7 +337,8 @@ describeControlUiE2e("Control UI mocked Gateway E2E", () => {
 
     try {
       await page.goto(`${server.baseUrl}chat`);
-      const image = page.locator('.chat-message-image[alt="telegram-photo.png"]');
+      await expect.poll(() => requestedMediaUrls.length, { timeout: 10_000 }).toBe(2);
+      const image = page.getByAltText("Attached image");
       await image.waitFor({ state: "visible", timeout: 10_000 });
       await expect
         .poll(() =>
@@ -346,7 +347,6 @@ describeControlUiE2e("Control UI mocked Gateway E2E", () => {
           ),
         )
         .toBe(1);
-      expect(requestedMediaUrls).toHaveLength(2);
     } finally {
       await closeBrowserContext(context);
     }
