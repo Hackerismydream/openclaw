@@ -4,6 +4,16 @@
   "glossaryHash": "47cf80de6cebb6ba1ac7a0bfd60e96de12a8611785bae9ca4f82c14912db9bd1",
   "entries": [
     {
+      "id": "native.android.d55616e142c8be0f",
+      "source": "Off",
+      "translated": "Wyłączone"
+    },
+    {
+      "id": "native.android.f59b83f58086eb89",
+      "source": "Default",
+      "translated": "Domyślne"
+    },
+    {
       "id": "native.android.805d35da3b3c9d18",
       "source": "Ready",
       "translated": "Gotowe"
@@ -1674,11 +1684,6 @@
       "translated": "Zadania Cron"
     },
     {
-      "id": "native.android.4a583b7a36684ed7",
-      "source": "Enabled",
-      "translated": "Włączone"
-    },
-    {
       "id": "native.android.b043fde2bb211935",
       "source": "Android shows scheduled work status. Create and edit schedules from the desktop app.",
       "translated": "Android pokazuje stan zaplanowanych zadań. Twórz i edytuj harmonogramy w aplikacji desktopowej."
@@ -1697,6 +1702,21 @@
       "id": "native.android.fe85be29a00c5e58",
       "source": "Create recurring OpenClaw work from the desktop app.",
       "translated": "Twórz cykliczne zadania OpenClaw w aplikacji desktopowej."
+    },
+    {
+      "id": "native.android.e3a6337e3c28d3f5",
+      "source": "Connect the gateway to inspect cron jobs.",
+      "translated": "Połącz Gateway, aby sprawdzić zadania cron."
+    },
+    {
+      "id": "native.android.2d3daa5032913461",
+      "source": "Cron job not loaded.",
+      "translated": "Zadanie cron nie zostało załadowane."
+    },
+    {
+      "id": "native.android.401993832e04f790",
+      "source": "Loading cron job…",
+      "translated": "Ładowanie zadania cron…"
     },
     {
       "id": "native.android.6da97c8c6e1a3d3a",
@@ -2174,6 +2194,41 @@
       "translated": "Problem"
     },
     {
+      "id": "native.android.4a583b7a36684ed7",
+      "source": "Enabled",
+      "translated": "Włączone"
+    },
+    {
+      "id": "native.android.1a3b13c02f53120f",
+      "source": "No",
+      "translated": "Nie"
+    },
+    {
+      "id": "native.android.9f6111d68ea1c273",
+      "source": "Yes",
+      "translated": "Tak"
+    },
+    {
+      "id": "native.android.4fcad8b85203f5a8",
+      "source": "Last Error",
+      "translated": "Ostatni błąd"
+    },
+    {
+      "id": "native.android.369f2775636e8fd4",
+      "source": "Delivery Error",
+      "translated": "Błąd dostarczenia"
+    },
+    {
+      "id": "native.android.d02323bcac09c67f",
+      "source": "Tap to copy",
+      "translated": "Stuknij, aby skopiować"
+    },
+    {
+      "id": "native.android.09641868d42a68fb",
+      "source": "$title copied",
+      "translated": "Skopiowano $title"
+    },
+    {
       "id": "native.android.727e7f203b075b43",
       "source": "Default assistant",
       "translated": "Domyślny asystent"
@@ -2212,6 +2267,26 @@
       "id": "native.android.35d4bc86e9ba395d",
       "source": "Off",
       "translated": "Wyłączone"
+    },
+    {
+      "id": "native.android.22f3549d0fab271d",
+      "source": "System Event Text",
+      "translated": "Tekst zdarzenia systemowego"
+    },
+    {
+      "id": "native.android.35e7850777bd6c6a",
+      "source": "Agent Prompt",
+      "translated": "Prompt agenta"
+    },
+    {
+      "id": "native.android.c49027320aa3f807",
+      "source": "Command",
+      "translated": "Polecenie"
+    },
+    {
+      "id": "native.android.f36439e78187c554",
+      "source": "Payload Text",
+      "translated": "Tekst ładunku"
     },
     {
       "id": "native.android.46ba30c035d8f9b3",
@@ -5909,6 +5984,16 @@
       "translated": "OpenClaw docenia swoich partnerów w społeczności open-source."
     },
     {
+      "id": "native.apple.fc49f9b63e160581",
+      "source": "OpenClaw",
+      "translated": "OpenClaw"
+    },
+    {
+      "id": "native.apple.eaa4fe72f3730f3f",
+      "source": "Personal AI on your devices",
+      "translated": "Osobista AI na Twoich urządzeniach"
+    },
+    {
       "id": "native.apple.35714980723b430d",
       "source": "OpenClaw app version",
       "translated": "Wersja aplikacji OpenClaw"
@@ -5917,6 +6002,36 @@
       "id": "native.apple.bbb2c589c2049217",
       "source": "iOS",
       "translated": "iOS"
+    },
+    {
+      "id": "native.apple.9f71c5c00d1bba49",
+      "source": "Website",
+      "translated": "Witryna"
+    },
+    {
+      "id": "native.apple.7d10fb0ea5b704fa",
+      "source": "Docs",
+      "translated": "Dokumentacja"
+    },
+    {
+      "id": "native.apple.e501402343d42f4d",
+      "source": "GitHub",
+      "translated": "GitHub"
+    },
+    {
+      "id": "native.apple.ee880812d92bcacf",
+      "source": "Discord",
+      "translated": "Discord"
+    },
+    {
+      "id": "native.apple.b962116ff5bf1905",
+      "source": "© 2026 OpenClaw Foundation — MIT License.",
+      "translated": "© 2026 OpenClaw Foundation — licencja MIT."
+    },
+    {
+      "id": "native.apple.106434d1305d153b",
+      "source": "Title",
+      "translated": "Tytuł"
     },
     {
       "id": "native.apple.0f4e7486619df175",
@@ -12689,6 +12804,36 @@
       "translated": "Pisanie"
     },
     {
+      "id": "native.apple.86695104895ebed8",
+      "source": "Queued",
+      "translated": "W kolejce"
+    },
+    {
+      "id": "native.apple.a85f179b35d39d8f",
+      "source": "Sending…",
+      "translated": "Wysyłanie…"
+    },
+    {
+      "id": "native.apple.2888a268bfa49e9e",
+      "source": "Not sent",
+      "translated": "Nie wysłano"
+    },
+    {
+      "id": "native.apple.593219d4c4479c59",
+      "source": "Queued, sends when reconnected",
+      "translated": "W kolejce, zostanie wysłane po ponownym połączeniu"
+    },
+    {
+      "id": "native.apple.00e673b9c5263c5c",
+      "source": "Sending",
+      "translated": "Wysyłanie"
+    },
+    {
+      "id": "native.apple.df1a81bd7a0bca36",
+      "source": "Not sent, touch and hold to retry or delete",
+      "translated": "Nie wysłano, dotknij i przytrzymaj, aby spróbować ponownie lub usunąć"
+    },
+    {
       "id": "native.apple.6b18ea1d85b5d3a2",
       "source": "Running tools…",
       "translated": "Uruchamianie narzędzi…"
@@ -12702,6 +12847,16 @@
       "id": "native.apple.43be8a2336e42faf",
       "source": "Sessions",
       "translated": "Sesje"
+    },
+    {
+      "id": "native.apple.5824df4efbf6c977",
+      "source": "Retry Send",
+      "translated": "Ponów wysyłanie"
+    },
+    {
+      "id": "native.apple.cdad35e9657fa693",
+      "source": "Delete",
+      "translated": "Usuń"
     },
     {
       "id": "native.apple.f84b674ad395b694",

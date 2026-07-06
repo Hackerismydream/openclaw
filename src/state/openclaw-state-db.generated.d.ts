@@ -496,6 +496,16 @@ export interface FlowRuns {
   wait_json: string | null;
 }
 
+export interface GatewayBootLifecycle {
+  boot_id: string;
+  completed_at_ms: number | null;
+  outcome: "clean_stop" | "forced_stop" | "planned_restart" | "startup_failed" | null;
+  pid: number;
+  reason: string | null;
+  started_at_ms: number;
+  startup_reason: string | null;
+}
+
 export interface GatewayRestartHandoff {
   created_at: number;
   expires_at: number;
@@ -958,6 +968,21 @@ export interface WorkspaceSetupState {
   workspace_path: string;
 }
 
+export interface Worktrees {
+  base_ref: string;
+  branch: string;
+  created_at: number;
+  id: string;
+  last_active_at: number;
+  owner_id: string | null;
+  owner_kind: string;
+  path: string;
+  removed_at: number | null;
+  repo_fingerprint: string;
+  repo_root: string;
+  snapshot_ref: string | null;
+}
+
 export interface DB {
   acp_replay_events: AcpReplayEvents;
   acp_replay_sessions: AcpReplaySessions;
@@ -991,6 +1016,7 @@ export interface DB {
   diagnostic_stability_bundles: DiagnosticStabilityBundles;
   exec_approvals_config: ExecApprovalsConfig;
   flow_runs: FlowRuns;
+  gateway_boot_lifecycle: GatewayBootLifecycle;
   gateway_restart_handoff: GatewayRestartHandoff;
   gateway_restart_intent: GatewayRestartIntent;
   gateway_restart_sentinel: GatewayRestartSentinel;
@@ -1024,4 +1050,5 @@ export interface DB {
   web_push_subscriptions: WebPushSubscriptions;
   web_push_vapid_keys: WebPushVapidKeys;
   workspace_setup_state: WorkspaceSetupState;
+  worktrees: Worktrees;
 }
