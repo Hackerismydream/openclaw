@@ -2131,6 +2131,11 @@ describe("grouped chat rendering", () => {
     "media://inbound/",
     "media://inbound/nested%2Fphoto.png",
     "media://inbound/%00.png",
+    "media://inbound/nested/../photo.png",
+    "media://inbound/%2e%2e/photo.png",
+    "media://inbound/..",
+    "media://inbound/photo.png?raw=1",
+    "media://inbound/photo.png#preview",
   ])("does not proxy non-canonical inbound media ref %s", (source) => {
     resetAssistantAttachmentAvailabilityCacheForTest();
     const fetchMock = vi.fn();

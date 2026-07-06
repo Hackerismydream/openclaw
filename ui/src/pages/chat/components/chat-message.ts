@@ -1237,16 +1237,15 @@ function isLocalAssistantAttachmentSource(source: string): boolean {
 }
 
 function isCanonicalInboundMediaSource(source: string): boolean {
+  // Match the raw one-segment form first; URL parsing would erase dot segments.
+  const match = /^media:\/\/inbound\/([^/?#]+)$/i.exec(source.trim());
+  if (!match?.[1]) {
+    return false;
+  }
   try {
-    const parsed = new URL(source.trim());
-    const id = decodeURIComponent(parsed.pathname.replace(/^\/+/, ""));
+    const id = decodeURIComponent(match[1]);
     return (
-      parsed.protocol === "media:" &&
-      parsed.hostname === "inbound" &&
-      Boolean(id) &&
-      !id.includes("/") &&
-      !id.includes("\\") &&
-      !id.includes("\0")
+      id !== "." && id !== ".." && !id.includes("/") && !id.includes("\\") && !id.includes("\0")
     );
   } catch {
     return false;
