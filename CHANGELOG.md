@@ -22,6 +22,7 @@ Docs: https://docs.openclaw.ai
 
 ### Fixes
 
+- **Agent helper downloads:** bound fd and ripgrep archive downloads and extraction with declared and streamed byte caps, extraction limits, timeouts, traversal-safe unpacking, and partial-file cleanup. (#98988) Thanks @LeonidasLux.
 - **OpenAI Realtime Codex auth:** reuse external Codex OAuth profiles for Realtime voice sessions when no explicit OpenAI API key is configured.
 - **Android Canvas navigation:** block device-local loopback and unspecified main-frame web targets across direct, user, JavaScript, and redirect navigation while preserving remote, LAN, emulator-host, and bundled canvases. (#99874) Thanks @ly85206559.
 - **Android network recovery:** reconnect Gateway sessions immediately when Android regains a validated network instead of waiting for the current reconnect backoff. (#100347) Thanks @ly85206559.
